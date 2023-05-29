@@ -1,0 +1,736 @@
+* {
+    box-sizing: border-box;
+}
+
+.custom-height {
+    height: 100vh;
+    width: 100%;
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.sec-1 {
+    background-color: #FFFFFF;
+    width: 230px;
+}
+
+.sec-2 {
+    background-color: rgba(24, 71, 140, 0.06);
+}
+
+.heading {
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.tab img {
+    max-width: 100%;
+    width: 24px;
+}
+
+.tab {
+    display: flex;
+    justify-content: left;
+    padding-left: 27px;
+    padding-top: 10px;
+}
+
+.img1 {
+    flex-shrink: 1;
+}
+
+.side-bar-icon {
+    font-size: 20px;
+}
+
+.list-icon {
+    display: none;
+}
+
+.dropdown-option {
+    padding-left: 12px;
+}
+
+.tab p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+    /* identical to box height */
+    color: #595959;
+    padding-left: 10px;
+}
+
+.tab a {
+    text-decoration: none;
+}
+
+.active2 {
+    background: rgba(24, 71, 140, 0.15);
+    border-radius: 15px;
+    color: #18478C;
+}
+
+.active2 p {
+    color: #18478C;
+}
+
+.accordion-button:not(.collapsed) {
+    background: rgba(24, 71, 140, 0.15) !important;
+    border-radius: 15px !important;
+    color: #18478C !important;
+}
+
+.accordion-flush .accordion-item .accordion-button,
+.accordion-flush .accordion-item .accordion-button.collapsed {
+    margin-top: -10px;
+}
+
+.accordion-flush .accordion-item {
+    border-radius: 50px;
+}
+
+.accordion-body ul {
+    list-style: none;
+}
+
+.accordion-body ul li {
+    padding-top: 10px;
+}
+
+.accordion-body ul li a {
+    text-decoration: none;
+    color: #595959;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 27px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.accordion-header {
+    padding-left: 8px;
+}
+
+.heading1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 32px;
+}
+
+.heading1 button {
+    background: #18478C;
+    border-radius: 20px;
+    padding: 10px 25px;
+    border: #18478C;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 34px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+
+.p1 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    /* identical to box height */
+    color: #000000;
+}
+
+.p2 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    color: #A8A8A8;
+}
+
+.card {
+    background: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    border-radius: 25px;
+    margin: 32px;
+}
+
+.card2 {
+    border-radius: 25px;
+}
+
+.card-body input {
+    background: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    border-radius: 10px;
+    margin-right: 0px;
+}
+
+.card-body label {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13.5px;
+    line-height: 20px;
+    /* identical to box height */
+    color: #000000;
+    white-space: nowrap;
+}
+
+.print-button {
+    background: rgba(24, 71, 140, 0.1);
+    background-image: url(../images/printer\ 1.png);
+    background-repeat: no-repeat;
+    background-position: 25px;
+    margin-top: 21px;
+    padding: 4px 30px 4px 60px;
+    border: 1px solid #18478C;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+    color: #18478C;
+}
+
+.add-button {
+    background: rgba(24, 71, 140, 0.1);
+    margin-top: 21px;
+    padding: 4px 30px;
+    border: 1px solid #18478C;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+    color: #18478C;
+}
+
+.search-bar {
+    padding: 0px 80px 0px 80px;
+}
+
+.checkbox {
+    width: 13px !important;
+}
+
+th {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13.5px;
+    line-height: 20px;
+    /* identical to box height */
+    color: #000000;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+tr:hover {
+    cursor: pointer;
+}
+
+td {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    /* identical to box height */
+    color: #495057;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.print-icon {
+    color: #FFA705;
+    padding: 5px 5px 5px -5px;
+    font-size: 20px;
+}
+
+.print-icon:hover {
+    cursor: pointer;
+}
+
+.pencil-icon {
+    color: #8AC609;
+    padding: 5px 5px 5px 15px;
+    font-size: 20px;
+}
+
+.pencil-icon:hover {
+    cursor: pointer;
+}
+
+.approve-status {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    /* identical to box height */
+    color: #4DA773 !important;
+    background: rgba(77, 167, 115, 0.15) !important;
+    padding: 2px 10px;
+    border-radius: 10px;
+}
+
+.reject-status {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    /* identical to box height */
+    color: #DE5409 !important;
+    background: rgba(222, 84, 9, 0.180392) !important;
+    padding: 2px 10px;
+    border-radius: 10px;
+}
+
+.resubmit-status {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    /* identical to box height */
+    color: #F1B44C !important;
+    background: rgba(241, 180, 76, 0.25) !important;
+    padding: 2px 10px;
+    border-radius: 10px;
+}
+
+
+/* New Learner Page */
+
+.active1 {
+    background: rgba(24, 71, 140, 0.15);
+    border-radius: 15px;
+    color: #18478C;
+    padding-left: 10px;
+    padding-bottom: 0.1px;
+    margin-left: -10px;
+}
+
+.active1 p {
+    color: #18478C;
+    margin-bottom: 10px;
+}
+
+.nav-item button {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #CCCCCC;
+    white-space: nowrap;
+}
+
+.nav-item button:hover {
+    color: #18478C;
+}
+
+.nav-underline {
+    --bs-nav-underline-link-active-color: #18478C;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.citizen-form {
+    margin: 50px 17px;
+}
+
+input[type='file'] {
+    color: rgba(0, 0, 0, 0);
+}
+
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.browse-files-text {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    text-decoration-line: underline;
+    color: #18478C;
+}
+
+.upload-files-container {
+    background-color: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 320px;
+}
+
+.label {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.browse-files-text {
+    padding-bottom: 79px;
+}
+
+.default-file-input {
+    opacity: 0;
+}
+
+.next-back-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    align-items: baseline;
+}
+
+.next-btn {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 34px;
+    color: #FFFFFF;
+    background: #18478C;
+    border: 1px solid #18478C;
+    border-radius: 15px;
+    /* margin-top: 70px;
+    margin-left: 84.5%; */
+    padding: 10px 25px;
+}
+
+.save-btn {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 34px;
+    color: #18478C;
+    background: rgba(24, 71, 140, 0.1);
+    border: 1px solid #18478C;
+    border-radius: 15px;
+    padding: 10px 25px;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.nav {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+}
+
+.back {
+    visibility: hidden;
+}
+
+.fingerprint-form {
+    margin: 85px 15px 55px 15px;
+}
+
+.hand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 77px 81px;
+    border: 1px solid #EDEDED;
+    border-radius: 5px;
+}
+
+.bi-fingerprint {
+    font-size: 70px;
+}
+
+.fingerprint {
+    border: 1px solid #EDEDED;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verification-form {
+    margin: 85px 15px 55px 15px;
+}
+
+.issue-form {
+    margin: 35px 15px 55px 15px;
+}
+
+.p3 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #000000;
+    text-align: center;
+}
+
+.p4 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    text-decoration-line: underline;
+    color: #18478C;
+    text-align: center;
+}
+
+.p4:hover {
+    cursor: pointer;
+}
+
+.back1 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 27px;
+    /* identical to box height */
+    text-decoration-line: underline;
+    color: #18478C;
+}
+
+.back1:hover {
+    cursor: pointer;
+}
+
+.verification-fingerprint1 {
+    display: flex;
+    justify-content: center;
+}
+
+.verification-fingerprint {
+    border: 1px solid #EDEDED;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 15%; */
+}
+
+.verification-fingerprint i {
+    font-size: 140px;
+}
+
+.verification-fingerprint2 {
+    background: url(../images/Rectangle\ 2795.png);
+    background-repeat: no-repeat;
+    background-position-y: 110px;
+}
+
+.p5 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+    color: #18478C;
+    margin-top: 30px;
+}
+
+.bi-arrow-left {
+    padding-right: 5px;
+}
+
+.finger-details {
+    background: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    border-radius: 25px;
+    padding: 25px;
+    margin-top: 60px;
+}
+
+.form-select1 {
+    padding-left: 50px;
+}
+
+.issue-table {
+    margin-top: 80px;
+}
+
+nav {
+    overflow-x: auto;
+}
+
+.openbtn {
+    display: none;
+}
+
+
+/* scroll bar styling */
+
+::-webkit-scrollbar {
+    height: 4px;
+    width: 4px;
+    background: white;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background: gray;
+    border-radius: 0;
+    height: 2px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    background: gray;
+    border-radius: 0;
+    height: 2px;
+}
+
+.section::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+
+/* The sidepanel menu */
+
+.sidepanel {
+    height: 100%;
+    /* Specify a height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+
+/* The sidepanel links */
+
+.sidepanel a {
+    padding: 0px 8px 8px 0px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidepanel a:hover {
+    color: #f1f1f1;
+}
+
+
+/* Position and style the close button (top right corner) */
+
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/* Style the button that is used to open the sidepanel */
+
+.openbtn {
+    font-size: 25px;
+    cursor: pointer;
+    background-color: transparent;
+    color: rgb(151, 151, 151);
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+.logo {
+    display: none;
+}
+
+@media screen and (min-width:1200px) {
+    .col-custom {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width:992px) {}
+
+@media screen and (max-width: 576px) {
+    .sec-1 {
+        display: none;
+    }
+    .bar-icon {
+        display: flex;
+        font-size: 40px;
+    }
+    .save-btn {
+        padding: 1px 10px;
+        font-size: 20px;
+    }
+    .next-btn {
+        padding: 5px 10px;
+        font-size: 20px;
+    }
+    .openbtn {
+        display: block;
+    }
+    .logo {
+        display: block;
+        margin: 20px;
+    }
+    .sec3 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .back1 {
+        font-size: 20px;
+    }
+    .form-select1 {
+        padding-left: 10px;
+    }
+    .search-bar {
+        padding: 0;
+    }
+}
